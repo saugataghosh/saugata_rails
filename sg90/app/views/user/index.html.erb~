@@ -1,0 +1,15 @@
+<h1>user#index</h1>
+<ul>
+<li>First</li>
+<li>Second</li>
+<li>Third</li>
+</ul>
+<ul>
+<% @user.each do|u| %>
+<li><%= u.name %></li>
+<%= link_to "show", user_path(u) %>
+<% end %>
+</ul>
+
+
+
