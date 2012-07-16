@@ -1,0 +1,7 @@
+<h1>User#SHOW</h1>
+<lable>Name</lable>
+<%= @user.name %>
+<br>
+<lable>email</lable>
+<%= @user.email %>
+<%= link_to "i

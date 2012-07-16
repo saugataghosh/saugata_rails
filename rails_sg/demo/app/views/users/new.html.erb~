@@ -1,0 +1,8 @@
+<% form_for @users do|i| %>
+<%= i.lable =:Name %>
+<%= i.text_field:Name %>
+<%= i.lable =:email %>
+<%= i.text_field:email %>
+<%= i.submit, "SUBMIT" %>
+<% end %>
+

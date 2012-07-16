@@ -1,0 +1,12 @@
+<h1>User#INDEX</h1>
+<ul>
+<li>First</li>
+<li>Second</li>
+<li>Third</li>
+<ul>
+<% @users.each do|u| %>
+<li><%= u.name %>
+<%= link_to "show", user_path(u) %>
+<%= link_to "delete", user_path(u), :method=>:delete %></li>
+<% end %>
+</ul>
