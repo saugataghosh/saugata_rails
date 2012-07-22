@@ -1,0 +1,28 @@
+<h1>User#SHOW</h1>
+<label>Name:</label>
+<%= @users.name %>
+<br>
+<label>email:</label>
+<%= @users.email %>
+<br>
+<label>firstname:</label> 
+<%= @users.f_name %>
+<br>
+<label>lastname:</label> 
+<%= @users.l_name %>
+<br>
+<label>ContactNumber:</label> 
+<%= @users.Contact_no %>
+<br>
+<label>UserType:</label> 
+<%= @users.User_type %>
+<br>
+<label>fullname:</label> 
+<%= @users.full_name %>
+<%= link_to "index", users_path %>
+<br>
+<%= link_to "create post", new_user_post_path(@users) %> 
+<% @users.posts.each do|post| %>
+<%= post.title %>
+<% end %>
+
