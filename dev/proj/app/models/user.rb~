@@ -2,7 +2,7 @@ class User < ActiveRecord::Base
   # attr_accessible :title, :body
   has_many:posts 
   validates :email,:f_name,:l_name,:presence=>true
-  validates :username,:presence=>true,:length=>{:maximum=>10}
+  validates :username,:length=>{:maximum=>10}
   before_save :ensure_fullname_has_a_value, :ensure_username, :check_for_lowercase
   protected
   def ensure_fullname_has_a_value

@@ -14,4 +14,4 @@ def show
 @user=User.find(params[:id])
 @post=@user.posts.find(params[:user_id])
 end
-
+end

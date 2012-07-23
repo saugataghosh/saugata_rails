@@ -11,7 +11,7 @@ class User < ActiveRecord::Base
     end
   end
  def ensure_username
-if username.nil?
+if username.blank?
 self.username=email 
 end
 end

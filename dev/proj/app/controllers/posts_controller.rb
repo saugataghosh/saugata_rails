@@ -1,4 +1,8 @@
 class PostsController < ApplicationController
+def index
+@posts=Post.all
+end
+
 def new
 @user=User.find(params[:user_id])
 @post=@user.posts.new
